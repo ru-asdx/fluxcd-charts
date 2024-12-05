@@ -6,7 +6,7 @@
 set -euo pipefail
 
 REPOSITORY_ROOT=$(git rev-parse --show-toplevel)
-REGISTRY="ghcr.io/controlplaneio-fluxcd/charts"
+REGISTRY="ghcr.io/ru-asdx/fluxcd-charts"
 
 for pkg in ${REPOSITORY_ROOT}/dist/*; do
   if [ -z "${pkg:-}" ]; then
